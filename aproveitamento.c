@@ -5,11 +5,14 @@ int main() {
 
     printf("\nDigite a quantidade de vitórias do seu time: ");
     scanf("%d%*c", &vitorias);
+
     printf("Digite a quantidade de empates do seu time: ");
     scanf("%d%*c", &empates);
+
     printf("Digite a quantidade de derrotas do seu time: ");
     scanf("%d%*c", &derrotas);
-    pontos = (vitorias * 3) + (empates * 1) + (derrotas * 0);
+    
+    pontos = (vitorias * 3) + empates;
     printf("Total de pontos do seu time = %d\n", pontos);
 
     return 0;
