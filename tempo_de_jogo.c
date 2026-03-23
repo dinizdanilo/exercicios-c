@@ -8,7 +8,12 @@ int main() {
     tempoHoras = tempoMinutos / 60;
     minRestantes = tempoMinutos % 60;
 
-    printf("Tempo de jogo: %d horas e %d minutos\n", tempoHoras, minRestantes);
+    if (tempoHoras > 1) {
+        printf("Tempo de jogo: %d horas e %d minutos\n", tempoHoras, minRestantes);
+    }
+    else {
+        printf("Tempo de jogo: %d hora e %d minutos\n", tempoHoras, minRestantes);
+    }
 
     return 0;
 }
