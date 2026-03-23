@@ -9,7 +9,7 @@ int main() {
     if (qtdGols > 10) {
         printf("Excelente temporada!\n");
     }
-    else if (qtdGols >= 5 && qtdGols <= 10) {
+    else if (qtdGols >= 5) {
         printf("Boa temporada!\n");
     }
     else {
