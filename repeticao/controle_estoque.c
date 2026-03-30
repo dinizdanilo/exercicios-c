@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int qtdProdutos, qtdEmEstoque, qtdMinima;
-    char nomeProduto[50];
-
+    int qtdProdutos; 
     printf("Digite a quantidade de produtos a serem cadastrados: ");
     scanf("%d%*c", &qtdProdutos);
-
+    
     for (int i = 1; i <= qtdProdutos; i++) {
+        int qtdEmEstoque, qtdMinima;
+        char nomeProduto[50];
         printf("\nProduto %d:\n", i);
         
         printf("Nome do produto: ");
