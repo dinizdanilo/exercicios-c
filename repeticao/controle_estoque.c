@@ -26,4 +26,6 @@ int main() {
             printf("-> O produto '%s' tem estoque suficiente. (Estoque: %d, Mínimo: %d)\n", nomeProduto, qtdEmEstoque, qtdMinima);
         }
     }
+
+    return 0;
 }
