@@ -29,4 +29,6 @@ int main() {
             printf("O carro %s está em boas condições!\n", modelo);
         }
     }
+
+    return 0;
 }
