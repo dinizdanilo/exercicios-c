@@ -25,7 +25,7 @@ int main() {
     printf("\nDigite a quantidade de linhas e colunas do quadrado: ");
     scanf("%d%*c", &n);
 
-    printf("%s", quadrado(n, caracter));
+    quadrado(n, caracter);
 
     return 0;
 }
