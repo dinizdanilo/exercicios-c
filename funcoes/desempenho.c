@@ -6,9 +6,13 @@ void menu() {
     printf("===============================\n");
 }
 
-char* desempenho(float nota1, float nota2, float nota3) {
+float calcularMedia(float nota1, float nota2, float nota3) {
     float media = (nota1 + nota2 + nota3) / 3;
 
+    return media;
+}
+
+char* classificar(float media) {
     if (media >= 9) {
         return "Excelente\n";
     } else if (media >= 7) {
@@ -34,7 +38,7 @@ int main() {
         printf("Digite a terceira nota do aluno %d: ", i);
         scanf("%f%*c", &nota3);
 
-        printf("O desempenho do aluno %d foi: %s", i, desempenho(nota1, nota2, nota3));
+        printf("O desempenho do aluno %d foi: %s", i, classificar(calcularMedia(nota1, nota2, nota3)));
     }
 
     return 0;
